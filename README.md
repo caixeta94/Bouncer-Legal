@@ -1,6 +1,6 @@
 # Bouncer-Legal
 
-Documentos legais de **Bouncer** (`com.portaodoestadio.game`) — publicados via GitHub Pages.
+Documentos legais de **Bouncer** (`com.uaigames.bouncer`) — publicados via GitHub Pages.
 
 > ⚠️ **NÃO EDITE OS HTML DIRETAMENTE.** Este repositório é **gerado** por
 > `Python/legalkit/generate.py` do `NoGamingKit`. Edição manual some na próxima
@@ -24,11 +24,13 @@ Documentos legais de **Bouncer** (`com.portaodoestadio.game`) — publicados via
 ## Antes de publicar o app — confira
 
 - [ ] Os flags de feature em `games.json` batem com o que o app **realmente faz**
-      (hoje: `local_ranking, analytics, ads, ads_so_premiado, ads_ssv`). Data Safety divergente do comportamento real é a causa
+      (hoje: `local_ranking, analytics, iap, ads, ads_intersticial, cloud_save, exclusao_no_app, ads_ssv`). Data Safety divergente do comportamento real é a causa
       nº 1 de remoção da Play.
-- [ ] Se o jogo tem **fantasma**, a opção de desativar existe de fato em
-      Configurações → Privacidade. A política promete isso.
-- [ ] Se o jogo tem **conta**, o botão "Excluir minha conta" existe no app.
+- [ ] A política **não** promete ajuste que o app não tem (ranking, apelido,
+      fantasma, medição): onde o ajuste não existe, ela manda ao contato.
+      Se o app ganhar o ajuste, a flag e o texto mudam junto.
+- [ ] Se o jogo tem **conta**, o caminho de exclusão na página
+      (`exclusao_caminho`: Ajustes → Excluir minha conta) é o que o app mostra hoje.
 - [ ] Revisão jurídica feita (veja o aviso ao pé de cada documento).
 
 Estúdio: **NoGaming** · Caixeta Nogueira — Consultoria Financeira LTDA · São Paulo, Brasil · studio.blockwave@gmail.com
